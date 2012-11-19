@@ -1,6 +1,6 @@
 colorscheme darkblue
 set expandtab
-set guifont=Menlo:h12
+set guifont="Source Code Pro":h11
 set ic
 set nowrap
 set nu
