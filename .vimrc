@@ -4,6 +4,7 @@ set nocompatible
 " plugins under the ~/.vim/bundle directory
 call pathogen#helptags()
 call pathogen#incubate()
+execute pathogen#infect()
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -20,12 +21,14 @@ map <left> <nop>
 map <right> <nop>
 
 map <leader>. :tabn<CR>
-map <leader>, :tabp<CR>
+map <leader>m :tabp<CR>
 
 " Font and color scheme
 colorscheme darkblue
-set guifont="Source Code Pro":h11
+set guifont=Source\ Code\ Pro:h11
 syntax on
+
+set noswapfile
 
 set hidden
 
