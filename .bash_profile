@@ -24,6 +24,8 @@ PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
 
 #Shortcuts
 alias ll="ls -laGFh"
+alias cll="clear; ll"
+alias gs="git status"
 
 #PATH
 PATH=$PATH:/Users/ben/pear/bin
