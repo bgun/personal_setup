@@ -7,12 +7,14 @@ reset=$(tput sgr0)
 #What time is it?
 date
 
-source ~/.git-completion.sh
-source ~/.git-prompt.sh
-
 #Terminal autocomplete
-if [ -f ~/.git-completion.bash ]; then
-    . ~/.git-completion.bash
+if [ -f ~/.git-completion.sh ]; then
+    . ~/.git-completion.sh
+fi
+
+#Git prompt
+if [ -f ~/.git-prompt.sh ]; then
+    . ~/.git-prompt.sh
 fi
 
 parse_git_branch() {
@@ -20,8 +22,6 @@ parse_git_branch() {
 }
 
 PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
-
-#PS1="\w $ "
 
 #Shortcuts
 alias ll="ls -laGFh"
