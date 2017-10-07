@@ -8,6 +8,7 @@ reset=$(tput sgr0)
 date
 
 source ~/.git-completion.sh
+source ~/.git-prompt.sh
 
 #Terminal autocomplete
 if [ -f ~/.git-completion.bash ]; then
