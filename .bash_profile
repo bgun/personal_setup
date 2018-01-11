@@ -7,6 +7,9 @@ reset=$(tput sgr0)
 #What time is it?
 date
 
+# Show timestamp when viewing history
+HISTTIMEFORMAT="%d/%m/%y %T "
+
 #Terminal autocomplete
 if [ -f ~/.git-completion.sh ]; then
     . ~/.git-completion.sh
